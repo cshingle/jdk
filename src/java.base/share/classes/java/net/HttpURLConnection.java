@@ -348,7 +348,7 @@ public abstract class HttpURLConnection extends URLConnection {
 
     /* valid HTTP methods */
     private static final String[] methods = {
-        "GET", "POST", "HEAD", "OPTIONS", "PUT", "DELETE", "TRACE"
+        "GET", "POST", "HEAD", "OPTIONS", "PUT", "DELETE", "TRACE", "PATCH"
     };
 
     /**
@@ -427,6 +427,7 @@ public abstract class HttpURLConnection extends URLConnection {
      *  <LI>PUT
      *  <LI>DELETE
      *  <LI>TRACE
+     *  <LI>PATCH (RFC 5789)
      * </UL> are legal, subject to protocol restrictions.  The default
      * method is GET.
      *
